@@ -5,7 +5,8 @@ import PackageDescription
 let package = Package(
     name: "Kokoro",
     platforms: [
-        .macOS(.v14)
+        .macOS(.v14),
+        .iOS(.v17)
     ],
     products: [
         .library(name: "Kokoro", targets: ["Kokoro"]),
