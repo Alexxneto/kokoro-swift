@@ -294,9 +294,9 @@ public final class Lexicon {
         if ["to", "To"].contains(word) || (word == "TO" && (tag == "TO" || tag == "IN")) {
             let phonemes: String
             switch ctx.futureVowel {
-            case nil: phonemes = goldString(for: "to") ?? "tu"
-            case false: phonemes = "tə"
-            case true: phonemes = "tʊ"
+            case .none: phonemes = goldString(for: "to") ?? "tu"
+            case .some(false): phonemes = "tə"
+            case .some(true): phonemes = "tʊ"
             }
             return (phonemes, 4)
         }
