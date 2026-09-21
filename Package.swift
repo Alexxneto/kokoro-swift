@@ -13,7 +13,7 @@ let package = Package(
         .executable(name: "KokoroCLI", targets: ["KokoroCLI"]),
     ],
     dependencies: [
-        .package(path: "Packages/Misaki"),
+        .package(url: "https://github.com/Alexxneto/misaki-swift.git", from: "1.0.0"),
         .package(url: "https://github.com/ml-explore/mlx-swift.git", exact: "0.31.3")
     ],
     targets: [
