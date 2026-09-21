@@ -20,7 +20,7 @@ let package = Package(
         .target(
             name: "Kokoro",
             dependencies: [
-                .product(name: "Misaki", package: "Misaki"),
+                .product(name: "Misaki", package: "misaki-swift"),
                 .product(name: "MLX", package: "mlx-swift"),
                 .product(name: "MLXFast", package: "mlx-swift"),
                 .product(name: "MLXNN", package: "mlx-swift"),
@@ -34,7 +34,7 @@ let package = Package(
             name: "KokoroTests",
             dependencies: [
                 "Kokoro",
-                .product(name: "Misaki", package: "Misaki"),
+                .product(name: "Misaki", package: "misaki-swift"),
             ]
         ),
     ]
